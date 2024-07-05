@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FDF0DC;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.imagemprincipal{
+    width: 100%;
+    height: 70vh;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tituloprincipal{
+    margin-left: 2%;
+    align-self: flex-start;
+    font-size: 2em;
+    font-family: "Jolly Lodger", system-ui;
+    letter-spacing: 2px;
+}
+
+.nav{
+    align-self: flex-end;
+}
+
+.nav .listas {
+    list-style-type: none;
+    margin-top: -3vh;
+    width: 600px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-right: 6%;
+    font-family: "Lato", sans-serif;
+}
+
+.nav .listas .lista {
+    display: inline;
+    transition: 0.3s ease-in-out;
+}
+
+.nav .listas .lista:hover{
+    transform: scale(1.1);
+}
+
+.nav .listas .lista .a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.titulosecundario {
+    font-size: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Jolly Lodger", system-ui;
+    letter-spacing: 2px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.container .paragrafocontainer{
+    margin-top: 50px;
+    text-align: center;
+    color: #94954A;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+}
+
+.container .acomodacoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .acomodacoes .imagem{
+    width: 10%;
+    height: 10%;
+}
+
+.areacarrossel{
+    margin-top:  10vh;
+    margin-bottom: 10vh;
+    width: 98.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative; /* Para posicionar as setas absolutamente */
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px; /* Espaço entre os carrosséis */
+}
+
+.carousel {
+    width: calc(100% - 80px); /* Deixar espaço para as setas */
+    overflow: hidden;
+    position: relative; /* Para ajustar a posição do conteúdo */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave para o movimento do slide */
+}
+
+.carousel-item {
+    min-width: 25%; /* Ajuste para 4 cards por vez */
+    box-sizing: border-box;
+    padding: 20px; /* Aumentar espaçamento entre as imagens */
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Transição suave para a escala do item */
+}
+
+.carousel-item:hover{
+    transform: scale(1.03);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Transição suave para a escala da imagem */
+}
+
+.carousel-button {
+    background-color: transparent; /* Fundo transparente */
+    color: #333; /* Texto escuro */
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none; /* Remover borda */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+.carousel-button.prev {
+    left: -50px; /* Posição à esquerda fora do carrossel */
+}
+
+.carousel-button.next {
+    right: 10px; /* Posição à direita dentro do carrossel */
+}
+
+.confira{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.confira .tituloconfira{
+    margin-top: 30px;
+    text-align: center;
+    color: #000;
+}
+
+.confira .impressoes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.confira .impressoes .comentario{
+    border: 2px solid #94954A;
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.confira .impressoes .comentario .paragrafocomentario{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape{
+    position:absolute;
+    background-color: #7F4F24;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    gap: 3vw;
+    
+}
+
+.rodape .portaltitulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.rodape .portaltitulo .titulo1{
+    margin-top: auto;
+    color: #fff;
+    font-family: "Jolly Lodger", system-ui;
+    font-size: 60px;
+    
+}
+
+.rodape .nave{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.rodape .nave .eventos{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}/*animação eventos*/
+
+.rodape .nave .eventos:hover{
+    transform: scale(1.1);
+}/*animação eventos*/
+
+.rodape .titulo2{
+    text-align: center;
+    color: #ffffff;
+}
+
+.rodape .redes{
+    display: flex;
+    margin-top: -2vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    font-family: "Lato", sans-serif;
+}
+
+.rodape .redes .sociais{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-family: "Lato", sans-serif;
+}/*animação redes*/
+
+.rodape .redes .sociais:hover{
+    transform: scale(1.1);
+}/*animação redes*/
+
+.rodape .png1{
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    height: 20%;
+    flex-direction: column;
+}
+
+.rodape .titulo3{
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.rodape .contatos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10vh;
+    gap: 10px;
+    font-family: "Lato", sans-serif;
+    transition: 0.3s ease-in-out;
+
+}
+
+.rodape .contatos .ctt{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out
+}/*animação contatos*/
+
+.rodape .contatos .ctt:hover{
+    transform: scale(1.1);
+}/*animação contatos*/
+
+.rodape .png2{
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    height: 20%;
+    flex-direction: column;
+}
